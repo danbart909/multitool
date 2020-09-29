@@ -15,7 +15,7 @@ export default class Alphabetizer extends Component {
     let string = arr.join(`\n`)
     let alphabetized = []
     for (let i = 0; i < arr.length; i++) {
-      alphabetized.push( <><div className='alphabetized-output-div'>{arr[i]}</div></> )
+      alphabetized.push( <div className='alphabetized-output-div'>{arr[i]}</div> )
     }
     this.setState({
       alphabetized: alphabetized
@@ -30,7 +30,7 @@ export default class Alphabetizer extends Component {
         <div id='alphabetizer-input-container'>
 
           <form id='alphabetizer-input-form'>
-            <textarea id='alphabetizer-textarea' name='input' onChange={(e) => {this.setState({ alphabetizerForm: e.target.value })}}/>
+            <textarea id='alphabetizer-textarea' name='input' placeholder='Enter your items here, divided by a line break each. When you are finished, click the button below.' onChange={(e) => {this.setState({ alphabetizerForm: e.target.value })}}/>
             <div id='alphabetizer-button' onClick={() => {this.alphabetize()}}>alphabetize!</div>
           </form>
 
