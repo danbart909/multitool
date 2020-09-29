@@ -1,3 +1,552 @@
 * {
   box-sizing: border-box;
 }
+
+#overlord {
+  outline: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#navbar {
+  outline: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 5vh;
+}
+
+i {
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ********** home */
+
+#home-container {
+  height: 93vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ********** alphabetizer */
+
+#alphabetizer-container {
+  height: 93vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#alphabetizer-input-container {
+  outline: 2px solid gold;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#alphabetizer-output-container {
+  outline: 2px solid purple;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#alphabetizer-input-form {
+  outline: 2px solid teal;
+  height: 100%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#alphabetizer-textarea {
+  height: 70%;
+  width: 80%;
+}
+
+#alphabetizer-button {
+  height: 10%;
+  width: 20%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#alphabetizer-output {
+  outline: 2px solid black;
+  width: 80%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: auto;
+}
+
+#alphabetizer-output-span {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0 5px 0;
+  max-height: 100%;
+}
+
+.alphabetized-output-div {
+  /* outline: 1px solid black; */
+  padding: 5px;
+  margin: 2px;
+}
+
+
+
+
+
+
+
+/* ********** converter */
+
+#converter-container {
+  height: 93vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+
+/* length //////////////////////////////////// */
+
+
+#length-container {
+  outline: 2px solid gold;
+  height: 25%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#length-form {
+  outline: 2px solid lightcoral;
+  height: 100%;
+  width: 80%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+}
+
+
+
+#cm {
+  width: 25vw;
+  display: grid;
+  grid-template-columns: 25% 60% 15%;
+  align-content: center;
+}
+
+#cm > div {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+}
+
+
+
+#inch {
+  width: 25vw;
+  display: grid;
+  grid-template-columns: 25% 60% 15%;
+  align-content: center;
+}
+
+#inch > div {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+}
+
+
+
+#foot {
+  width: 25vw;
+  display: grid;
+  grid-template-columns: 25% 60% 15%;
+  align-content: center;
+}
+
+#foot > div {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+}
+
+
+
+#yard {
+  width: 25vw;
+  display: grid;
+  grid-template-columns: 25% 60% 15%;
+  align-content: center;
+}
+
+#yard > div {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+}
+
+
+
+#meter {
+  width: 25vw;
+  display: grid;
+  grid-template-columns: 25% 60% 15%;
+  align-content: center;
+}
+
+#meter > div {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+}
+
+
+
+#km {
+  width: 25vw;
+  display: grid;
+  grid-template-columns: 25% 60% 15%;
+  align-content: center;
+}
+
+#km > div {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+}
+
+
+
+#mile {
+  width: 25vw;
+  display: grid;
+  grid-template-columns: 25% 60% 15%;
+  align-content: center;
+}
+
+#mile > div {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+}
+
+
+
+#nautical {
+  width: 25vw;
+  display: grid;
+  grid-template-columns: 25% 60% 15%;
+  align-content: center;
+}
+
+#nautical > div {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+}
+
+
+/* weight //////////////////////////////////// */
+
+
+#weight-container {
+  outline: 2px solid teal;
+  height: 25%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#weight-form {
+  outline: 2px solid lightcoral;
+  height: 100%;
+  width: 80%;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+}
+
+
+
+#gram {
+  width: 25vw;
+  display: grid;
+  grid-template-columns: 25% 60% 15%;
+  align-content: center;
+}
+
+#gram > div {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+}
+
+
+
+#ounce {
+  width: 25vw;
+  display: grid;
+  grid-template-columns: 25% 60% 15%;
+  align-content: center;
+}
+
+#ounce > div {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+}
+
+
+
+#pound {
+  width: 25vw;
+  display: grid;
+  grid-template-columns: 25% 60% 15%;
+  align-content: center;
+}
+
+#pound > div {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+}
+
+
+
+#kg {
+  width: 25vw;
+  display: grid;
+  grid-template-columns: 25% 60% 15%;
+  align-content: center;
+}
+
+#kg > div {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+}
+
+
+/* speed //////////////////////////////////// */
+
+
+#speed-container {
+  outline: 2px solid red;
+  height: 25%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#speed-form {
+  outline: 2px solid lightcoral;
+  height: 100%;
+  width: 80%;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+}
+
+
+
+#mph {
+  width: 25vw;
+  display: grid;
+  grid-template-columns: 25% 60% 15%;
+  align-content: center;
+}
+
+#mph > div {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+}
+
+
+
+#kph {
+  width: 25vw;
+  display: grid;
+  grid-template-columns: 25% 60% 15%;
+  align-content: center;
+}
+
+#kph > div {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+}
+
+
+
+#knot {
+  width: 25vw;
+  display: grid;
+  grid-template-columns: 25% 60% 15%;
+  align-content: center;
+}
+
+#knot > div {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+}
+
+
+
+#mach {
+  width: 25vw;
+  display: grid;
+  grid-template-columns: 25% 60% 15%;
+  align-content: center;
+}
+
+#mach > div {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+}
+
+
+/* temperature ////////////////////////////// */
+
+
+#temp-container {
+  outline: 2px solid blueviolet;
+  height: 25%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#temp-form {
+  outline: 2px solid lightcoral;
+  height: 100%;
+  width: 80%;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+}
+
+
+
+#fahrenheit {
+  width: 25vw;
+  display: grid;
+  grid-template-columns: 25% 60% 15%;
+  align-content: center;
+}
+
+#fahrenheit > div {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+}
+
+
+
+#celsius {
+  width: 25vw;
+  display: grid;
+  grid-template-columns: 25% 60% 15%;
+  align-content: center;
+}
+
+#celsius > div {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+}
+
+
+
+#kelvin {
+  width: 25vw;
+  display: grid;
+  grid-template-columns: 25% 60% 15%;
+  align-content: center;
+}
+
+#kelvin > div {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ********** something */
+
+#something-container {
+  height: 93vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
