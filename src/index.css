@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+}
+
 #overlord {
   outline: 1px solid black;
   display: flex;
@@ -37,7 +41,7 @@ i {
 /* ********** home */
 
 #home-container {
-  height: 93vh;
+  height: 95vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,7 +61,7 @@ i {
 /* ********** alphabetizer */
 
 #alphabetizer-container {
-  height: 93vh;
+  height: 95vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -85,7 +89,7 @@ i {
 #alphabetizer-input-form {
   outline: 2px solid teal;
   height: 100%;
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -109,7 +113,7 @@ i {
 
 #alphabetizer-output {
   outline: 2px solid black;
-  width: 80%;
+  width: 90%;
   height: 90%;
   display: flex;
   justify-content: center;
@@ -140,7 +144,7 @@ i {
 /* ********** converter */
 
 #converter-container {
-  height: 93vh;
+  height: 95vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -163,7 +167,7 @@ i {
 #length-form {
   outline: 2px solid lightcoral;
   height: 100%;
-  width: 80%;
+  width: 90%;
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto;
@@ -307,7 +311,7 @@ i {
 #weight-form {
   outline: 2px solid lightcoral;
   height: 100%;
-  width: 80%;
+  width: 90%;
   display: grid;
   grid-template-rows: auto auto;
   grid-template-columns: auto auto;
@@ -391,7 +395,7 @@ i {
 #speed-form {
   outline: 2px solid lightcoral;
   height: 100%;
-  width: 80%;
+  width: 90%;
   display: grid;
   grid-template-rows: auto auto;
   grid-template-columns: auto auto;
@@ -475,7 +479,7 @@ i {
 #temp-form {
   outline: 2px solid lightcoral;
   height: 100%;
-  width: 80%;
+  width: 90%;
   display: grid;
   grid-template-rows: auto auto auto;
   justify-content: space-evenly;
@@ -542,11 +546,55 @@ i {
 
 
 
-/* ********** something */
+/* ********** clock */
 
-#something-container {
-  height: 93vh;
+#clock-container {
+  height: 95vh;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#worldclock-container {
+  outline: 2px solid blue;
+  height: 33.3%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#stopwatch-container {
+  outline: 2px solid red;
+  height: 33.3%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#stopwatch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#timer-container {
+  outline: 2px solid green;
+  height: 33.3%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#timer {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }

@@ -22,8 +22,8 @@ export default class NavBar extends Component {
             </NavLink>
           </div>
           <div id='navbar4' className='navbar-bar'>
-            <NavLink activeClassName='is-active' to='/Something' id='navlink-something' className='navlink'>
-              <span>Something</span>
+            <NavLink activeClassName='is-active' to='/Clock' id='navlink-clock' className='navlink'>
+              <span>Clock</span>
             </NavLink>
           </div>
         </div>

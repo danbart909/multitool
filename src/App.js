@@ -4,7 +4,7 @@ import NavBar from './NavBar'
 import Alphabetizer from './comps/Alphabetizer' 
 import Converter from './comps/Converter'
 import Home from './comps/Home'
-import Something from './comps/Something'
+import Clock from './comps/Clock'
 
 export default class App extends Component {
 
@@ -14,14 +14,6 @@ export default class App extends Component {
       km: 0
     }
   }
-
-  // kmMiles = (e) => {
-  //   let value = e.target.value
-
-  //   this.setState({
-  //     km: value
-  //   })
-  // }
 
   render() {
     return (
@@ -41,14 +33,11 @@ export default class App extends Component {
             />
             <Route
               path='/Converter'
-              render={(props) => <Converter {...props}
-                uberstate={this.state}
-                // kmMiles={(e) => this.kmMiles(e)}
-              />}
+              render={(props) => <Converter {...props} uberstate={this.state} />}
             />
             <Route
-              path='/Something'
-              render={(props) => <Something {...props} />}
+              path='/Clock'
+              render={(props) => <Clock {...props} />}
             />
           </Switch>
         </div>
