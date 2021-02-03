@@ -8,12 +8,12 @@ import Clock from './comps/Clock'
 
 export default class App extends Component {
 
-  constructor(props) {
-    super(props)
-    this.state = {
-      km: 0
-    }
-  }
+  // constructor(props) {
+  //   super(props)
+  //   this.state = {
+
+  //   }
+  // }
 
   render() {
     return (
@@ -33,7 +33,8 @@ export default class App extends Component {
             />
             <Route
               path='/Converter'
-              render={(props) => <Converter {...props} uberstate={this.state} />}
+              render={(props) => <Converter {...props} />}
+              // render={(props) => <Converter {...props} state={this.state} />}
             />
             <Route
               path='/Clock'

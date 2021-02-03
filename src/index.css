@@ -4,25 +4,58 @@
 
 body {
   margin: 0;
+  background-color: black;
+  color: white;
 }
 
 #overlord {
-  outline: 1px solid black;
+  outline: 1px solid white;
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
 
 #navbar {
-  outline: 1px solid black;
+  outline: 1px solid white;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   height: 5vh;
 }
 
+#navbar a {
+  color: white;
+  text-decoration: none;
+}
+
 i {
   cursor: pointer;
+}
+
+:focus {
+  background-color: black;
+}
+
+textarea, input {
+  background-color: black;
+  color: white;
+}
+
+textarea {
+  padding: .5% 1%;
+}
+
+input {
+  padding: 4%;
+}
+
+::placeholder {
+  color: darkgray;
+}
+
+::selection {
+  background-color: rgb(8, 63, 69);
+  color: rgb(199, 199, 199);
 }
 
 
@@ -34,11 +67,18 @@ i {
 
 
 
+/**********************************************/
+/******************** Home ********************/
+/**********************************************/
 
 
 
 
-/* ********** home */
+
+
+
+
+
 
 #home-container {
   height: 95vh;
@@ -56,9 +96,18 @@ i {
 
 
 
+/******************************************************/
+/******************** Alphabetizer ********************/
+/******************************************************/
 
 
-/* ********** alphabetizer */
+
+
+
+
+
+
+
 
 #alphabetizer-container {
   height: 95vh;
@@ -104,35 +153,35 @@ i {
 #alphabetizer-button {
   height: 10%;
   width: 20%;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #alphabetizer-output {
-  outline: 2px solid black;
+  outline: 2px solid white;
   width: 90%;
   height: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   overflow: auto;
 }
 
-#alphabetizer-output-span {
-  display: flex;
-  flex-direction: column;
-  padding: 5px 0 5px 0;
-  max-height: 100%;
+#alphabetizer-output-div-1 {
+  outline: 1px solid red;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* padding: 5px 0 5px 0; */
+  /* max-height: 100%; */
 }
 
-.alphabetized-output-div {
-  /* outline: 1px solid black; */
-  padding: 5px;
-  margin: 2px;
+.alphabetizer-output-div-2 {
+  outline: 1px solid white;
+  /* padding: 5px; */
+  /* margin: 2px; */
 }
 
 
@@ -141,7 +190,21 @@ i {
 
 
 
-/* ********** converter */
+
+
+
+/***************************************************/
+/******************** Converter ********************/
+/***************************************************/
+
+
+
+
+
+
+
+
+
 
 #converter-container {
   height: 95vh;
@@ -152,7 +215,13 @@ i {
 }
 
 
-/* length //////////////////////////////////// */
+
+
+
+/******************** length ********************/
+
+
+
 
 
 #length-container {
@@ -175,113 +244,13 @@ i {
   align-content: space-evenly;
 }
 
-
-
-#cm {
-  width: 25vw;
-  display: grid;
-  grid-template-columns: 25% 60% 15%;
-  align-content: center;
-}
-
-#cm > div {
-  justify-self: center;
-  align-self: center;
-  text-align: center;
-}
-
-
-
-#inch {
-  width: 25vw;
-  display: grid;
-  grid-template-columns: 25% 60% 15%;
-  align-content: center;
-}
-
-#inch > div {
-  justify-self: center;
-  align-self: center;
-  text-align: center;
-}
-
-
-
-#foot {
-  width: 25vw;
-  display: grid;
-  grid-template-columns: 25% 60% 15%;
-  align-content: center;
-}
-
-#foot > div {
-  justify-self: center;
-  align-self: center;
-  text-align: center;
-}
-
-
-
-#yard {
-  width: 25vw;
-  display: grid;
-  grid-template-columns: 25% 60% 15%;
-  align-content: center;
-}
-
-#yard > div {
-  justify-self: center;
-  align-self: center;
-  text-align: center;
-}
-
-
-
-#meter {
-  width: 25vw;
-  display: grid;
-  grid-template-columns: 25% 60% 15%;
-  align-content: center;
-}
-
-#meter > div {
-  justify-self: center;
-  align-self: center;
-  text-align: center;
-}
-
-
-
-#km {
-  width: 25vw;
-  display: grid;
-  grid-template-columns: 25% 60% 15%;
-  align-content: center;
-}
-
-#km > div {
-  justify-self: center;
-  align-self: center;
-  text-align: center;
-}
-
-
-
-#mile {
-  width: 25vw;
-  display: grid;
-  grid-template-columns: 25% 60% 15%;
-  align-content: center;
-}
-
-#mile > div {
-  justify-self: center;
-  align-self: center;
-  text-align: center;
-}
-
-
-
+#cm,
+#inch,
+#foot,
+#yard,
+#meter,
+#km,
+#mile,
 #nautical {
   width: 25vw;
   display: grid;
@@ -289,6 +258,13 @@ i {
   align-content: center;
 }
 
+#cm > div,
+#inch > div,
+#foot > div,
+#yard > div,
+#meter > div,
+#km > div,
+#mile > div,
 #nautical > div {
   justify-self: center;
   align-self: center;
@@ -296,7 +272,13 @@ i {
 }
 
 
-/* weight //////////////////////////////////// */
+
+
+
+/******************** weight ********************/
+
+
+
 
 
 #weight-container {
@@ -319,53 +301,9 @@ i {
   align-content: space-evenly;
 }
 
-
-
-#gram {
-  width: 25vw;
-  display: grid;
-  grid-template-columns: 25% 60% 15%;
-  align-content: center;
-}
-
-#gram > div {
-  justify-self: center;
-  align-self: center;
-  text-align: center;
-}
-
-
-
-#ounce {
-  width: 25vw;
-  display: grid;
-  grid-template-columns: 25% 60% 15%;
-  align-content: center;
-}
-
-#ounce > div {
-  justify-self: center;
-  align-self: center;
-  text-align: center;
-}
-
-
-
-#pound {
-  width: 25vw;
-  display: grid;
-  grid-template-columns: 25% 60% 15%;
-  align-content: center;
-}
-
-#pound > div {
-  justify-self: center;
-  align-self: center;
-  text-align: center;
-}
-
-
-
+#gram,
+#ounce,
+#pound,
 #kg {
   width: 25vw;
   display: grid;
@@ -373,6 +311,9 @@ i {
   align-content: center;
 }
 
+#gram > div,
+#ounce > div,
+#pound > div,
 #kg > div {
   justify-self: center;
   align-self: center;
@@ -380,7 +321,13 @@ i {
 }
 
 
-/* speed //////////////////////////////////// */
+
+
+
+/******************** speed ********************/
+
+
+
 
 
 #speed-container {
@@ -403,53 +350,9 @@ i {
   align-content: space-evenly;
 }
 
-
-
-#mph {
-  width: 25vw;
-  display: grid;
-  grid-template-columns: 25% 60% 15%;
-  align-content: center;
-}
-
-#mph > div {
-  justify-self: center;
-  align-self: center;
-  text-align: center;
-}
-
-
-
-#kph {
-  width: 25vw;
-  display: grid;
-  grid-template-columns: 25% 60% 15%;
-  align-content: center;
-}
-
-#kph > div {
-  justify-self: center;
-  align-self: center;
-  text-align: center;
-}
-
-
-
-#knot {
-  width: 25vw;
-  display: grid;
-  grid-template-columns: 25% 60% 15%;
-  align-content: center;
-}
-
-#knot > div {
-  justify-self: center;
-  align-self: center;
-  text-align: center;
-}
-
-
-
+#mph,
+#kph,
+#knot,
 #mach {
   width: 25vw;
   display: grid;
@@ -457,6 +360,9 @@ i {
   align-content: center;
 }
 
+#mph > div,
+#kph > div,
+#knot > div,
 #mach > div {
   justify-self: center;
   align-self: center;
@@ -464,7 +370,13 @@ i {
 }
 
 
-/* temperature ////////////////////////////// */
+
+
+
+/******************** temperature ********************/
+
+
+
 
 
 #temp-container {
@@ -486,38 +398,8 @@ i {
   align-content: space-evenly;
 }
 
-
-
-#fahrenheit {
-  width: 25vw;
-  display: grid;
-  grid-template-columns: 25% 60% 15%;
-  align-content: center;
-}
-
-#fahrenheit > div {
-  justify-self: center;
-  align-self: center;
-  text-align: center;
-}
-
-
-
-#celsius {
-  width: 25vw;
-  display: grid;
-  grid-template-columns: 25% 60% 15%;
-  align-content: center;
-}
-
-#celsius > div {
-  justify-self: center;
-  align-self: center;
-  text-align: center;
-}
-
-
-
+#fahrenheit,
+#celsius,
 #kelvin {
   width: 25vw;
   display: grid;
@@ -525,6 +407,8 @@ i {
   align-content: center;
 }
 
+#fahrenheit > div,
+#celsius > div,
 #kelvin > div {
   justify-self: center;
   align-self: center;
@@ -540,13 +424,18 @@ i {
 
 
 
+/***********************************************/
+/******************** Clock ********************/
+/***********************************************/
 
 
 
 
 
 
-/* ********** clock */
+
+
+
 
 #clock-container {
   height: 95vh;

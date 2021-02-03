@@ -11,16 +11,29 @@ export default class Alphabetizer extends Component {
 
   alphabetize = () => {
     let start = this.state.alphabetizerForm
-    let arr = start.split(` `).sort()
-    let string = arr.join(`\n`)
+    let arr = start.split(",").sort()
     let alphabetized = []
     for (let i = 0; i < arr.length; i++) {
-      alphabetized.push( <div className='alphabetized-output-div'>{arr[i]}</div> )
+      alphabetized.push( <div className='alphabetizer-output-div-2'>{arr[i]}, </div> )
     }
     this.setState({
       alphabetized: alphabetized
-    }, () => {console.log(arr, string, alphabetized)})
+    }, () => {console.log(arr, alphabetized)})
   }
+
+  // alphabetize = () => {
+  //   let start = this.state.alphabetizerForm
+  //   let arr = start.split()
+  //   let arr2 = arr.sort()
+  //   let string = arr.join(`,`)
+  //   let alphabetized = []
+  //   for (let i = 0; i < arr2.length; i++) {
+  //     alphabetized.push( <div className='alphabetized-output-div'>{arr2[i]}</div> )
+  //   }
+  //   this.setState({
+  //     alphabetized: alphabetized
+  //   }, () => {console.log(arr, arr2, alphabetized)})
+  // }
   
 
   render() {
@@ -38,7 +51,7 @@ export default class Alphabetizer extends Component {
 
         <div id='alphabetizer-output-container'>
           <div id='alphabetizer-output'>
-            <span id='alphabetizer-output-span'>{this.state.alphabetized}</span>
+            <div id='alphabetizer-output-div-1'>{this.state.alphabetized}</div>
           </div>
         </div>
 
